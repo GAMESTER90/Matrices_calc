@@ -10,8 +10,9 @@ function App() {
   //let csv_data = useRef();
 
       // State to store the parsed file data.
-      const [data, setData] = useState([]);
-     
+      const [data, setData] = useState(new Array());
+      
+
       // State to contain error in case of non-supported filetype.
       const [error, setError] = useState("");
        
@@ -72,13 +73,13 @@ function App() {
   return (
     <div className="App">
       <h1>Optimal Lighting Fixture Gen</h1>
-      <CanvasDisplay layout={data}/>
-      <br></br>
+      <CanvasDisplay layout={data} style={{marginTop:'10px'}}/>
+      <div className="sidePanel" style={{display:'inline-block'}}>
       <h3>Render from textbox.</h3>
       <div>
         <label style={{display:"block"}}>Enter CSV contents:</label>
         <textarea 
-            cols="50" rows="15" /*style={{width: "300px",
+            cols="25" rows="5" /*style={{width: "300px",
             height: "150px"}}
           name="textValue"*/
           onChange={handleTextBoxInputChange}
@@ -110,6 +111,7 @@ function App() {
                     {data}
                 </p>
             </div>*/}
+            </div>
         </div>
     </div>
   );
