@@ -15,7 +15,7 @@ const Canvas = props => {
 
     
       
-    //called only afte component is mounted and canvas context is accessible.
+    //called only after component is mounted and canvas context is accessible.
     useEffect(() => {
         const canvas = canvasRef.current;
         
