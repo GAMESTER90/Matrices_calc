@@ -73,7 +73,7 @@ function App() {
   return (
     <div className="App">
       <h1>Optimal Lighting Fixture Gen</h1>
-      <CanvasDisplay layout={data} style={{marginTop:'10px'}}/>
+      <CanvasDisplay layout={data} style={{verticalAlign: 'top',marginTop:'10px'}}/>
       <div className="sidePanel" style={{display:'inline-block'}}>
       <h3>Render from textbox.</h3>
       <div>
